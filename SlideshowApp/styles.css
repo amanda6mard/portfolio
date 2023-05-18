@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+    margin:0;
+    text-align: center;
+    background-color: #333;
+    color: #ddd;
+    font-family: 'Roboto', sans-serif;
+}
+
+canvas {
+    width: 100%;
+    background-color: #111;
+}
+
+.container {
+    position: relative;
+    max-width: 800px;
+    max-height: 450px;
+    margin: 20px auto 0px auto;
+}
+
+.controls {
+    display: block;
+    position: relative;
+    top:-4px; 
+    background-color: #222;
+    width:100%;
+    margin: auto;
+    cursor: pointer;
+}
+
+.button{
+    display: inline-block;
+    position: relative;
+    padding: 0 10px;
+    background-color: transparent;
+    border: none;
+    color: #f3f3f3;
+    font-size: 100%;
+    cursor: pointer;
+}
+
+.button:hover {
+    color:aqua;
+    transform: scale(1.05);
+}
+
+.button:focus {
+    outline: none;
+    transform: scale(1.05);
+    text-shadow: 1px 1px 1px black;
+}
+
+.button:disabled, button:disabled:hover {
+    color: #777;
+    transform: none;
+}
+
+.button-label {
+    font-size: 75%;
+}
+
+.button-icon {
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.button-group {
+    display: inline-block;
+    margin: 15px;
+}
+
+.center-group{
+    border-right: solid 1px #777;
+    border-left: solid 1px #777;
+    padding: 0px 20px;
+}
+
+.color-picker, .trans-picker {
+    display: none;
+    background-color: #111;
+    position: absolute;
+    right: 0px;
+    bottom: 70px;
+    width:180px;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 8px aqua;
+}
+
+.trans-picker{
+    right:60px;
+}
+
+select {
+    width: 100%;
+    height: 36px;
+    background-color: #f3f3f3;
+    border: none;
+    font-size: 90%;
+    margin-bottom: 10px;
+}
+
+label {
+    display:block;
+    font-size:75%;
+    text-align: left;
+    padding: 10px 0px 5px 0px;
+    width:100%;
+}
+
+.color-picker label{
+    padding: 0;
+}
+
+.color-picker p {
+    margin-bottom: 25px;
+}
+
+.active{
+    color: dodgerblue;
+}
+
+.active:hover, .active:focus {
+    color: dodgerblue;
+}
+
+.picker-active{
+    color:aqua;
+}
+
+.color {
+    color:white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 75%;
+    padding: 10px;
+    background-color: aqua;
+    margin: 10px 0;
+    border: 1px #555 solid;
+}
+
+#remove-color, #reset-color{
+    margin-bottom: 10px;
+    font-size: 100%;
+    background-color: transparent;
+    color: #f3f3f3;
+    border: none;
+    cursor: pointer;
+}
+
+#remove-color:hover, #reset-color:hover {
+    color: aqua;
+}
+
+.slider {
+      -webkit-appearance: none;  /* Override default CSS styles */
+      appearance: none;
+      width: 100%; /* Full-width */
+      height: 15px; /* Specified height */
+      background: white;
+      outline: none; /* Remove outline */
+      -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+      transition: opacity .2s;
+}
+
+#h-range {
+    background-image: linear-gradient(to right, hsl(0, 100%, 50%), hsl(15, 100%, 50%),hsl(30, 100%, 50%), hsl(45, 100%, 50%), hsl(60, 100%, 50%),hsl(75, 100%, 50%), hsl(90, 100%, 50%),hsl(105, 100%, 50%), hsl(120, 100%, 50%), hsl(135, 100%, 50%),hsl(150, 100%, 50%), hsl(165, 100%, 50%),hsl(180, 100%, 50%), hsl(195, 100%, 50%), hsl(210, 100%, 50%),hsl(225, 100%, 50%),hsl(240, 100%, 50%), hsl(255, 100%, 50%),hsl(270, 100%, 50%), hsl(285, 100%, 50%), hsl(300, 100%, 50%),hsl(315, 100%, 50%),hsl(330, 100%, 50%), hsl(345, 100%, 50%), hsl(360, 100%, 50%));
+}
+
+#s-range {
+    background-image: linear-gradient(to right, hsl(180, 0%, 50%), hsl(180, 50%, 50%), hsl(180, 100%, 50%));
+}
+
+#l-range {
+    background-image: linear-gradient(to right, hsl(180, 100%, 0%), hsl(180, 100%, 50%), hsl(180, 100%, 100%));
+}
+
+#a-range {
+    background-color: transparent;
+    background-image: linear-gradient(to right, hsla(180, 100%, 50%, 0), hsla(180, 100%, 50%, .1), hsla(180, 100%, 50%, .2), hsla(180, 100%, 50%, 1));
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.slider::-webkit-slider-thumb {
+      -webkit-appearance: none; /* Override default look */
+      appearance: none;
+      width: 10px; /* Set a specific slider handle width */
+      height: 20px; /* Slider handle height */
+      background: transparent;
+    border: solid 3px #eee;
+      cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+      width: 10px; /* Set a specific slider handle width */
+      height: 20px; /* Slider handle height */
+      background: transparent; 
+    border: solid 6px #eee;
+      cursor: pointer; /* Cursor on hover */
+
+}
+
+
+@media (max-width: 800px){
+        
+    .container {
+        margin:20px;
+    }
+
+    .button-group{
+        width:100%;
+        margin:0;
+        padding:20px 0px;
+        background-image: linear-gradient(to bottom, transparent, #111);
+    }
+    
+    .center-group{
+        border: none;
+        padding: 20px 0px;
+    }
+    
+    .color-picker{
+        bottom:84px;
+        right:0px;
+    }
+    
+    .trans-picker{
+        right:0;
+        bottom:84px;
+    }
+}

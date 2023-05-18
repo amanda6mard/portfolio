@@ -1,0 +1,20 @@
+~/photos, atthebeach.png, Just chilling by the ocean
+~/photos, bath_time.png, Time for a bath!
+~/photos, bedtime.png, Don't mind me. I'm just sleeping.
+~/photos, biggerone.png, I'll take the bigger one.
+~/photos, dragon.png, Guarded by a dragon? No. I guard the dragon.
+~/photos, fluffy_blankets.png, Did you need something?
+~/photos, folding_laundry.png, I'm helping you fold. This needed to be flatter.
+~/photos, gettingdry.png, I am not amused.
+~/photos, highfive.png, High five!
+~/photos, howl.png, Howling at the moon.
+~/photos, in_a_cloud.png, These blankets are so fluffy!
+~/photos, laundry.png, Oh? Were you folding this?
+~/photos, naptime.png, Go away. I'm napping.
+~/photos, not_amused.png, You think this is funny do you?
+~/photos, playtime.png, Can we play?
+~/photos, quilting.png, You're making a quilt? I'll help!
+~/photos, sewing.png, That's not how you cut fabric... Let me show you.
+~/photos, snowy.png, Do I have something on my face?
+~/photos, twoballs.png, One is not enough.
+~/photos, walk.png, Time for a walk!
