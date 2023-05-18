@@ -1,0 +1,677 @@
+@import url('https://fonts.googleapis.com/css?family=Francois+One|Open+Sans');
+
+html, body{
+    height: 100%;
+    width:100%;
+}
+
+body{
+    margin: 0px;
+    background-color: #eee;
+    font-family: 'Open Sans', sans-serif;
+    color: #3f3f3f;
+    text-align: center;
+    font-size: 80%;
+}
+
+h1 {
+    font-family: 'Francois One', sans-serif;
+    font-size: 175%;
+    font-weight: normal;
+}
+
+h2 {
+    font-weight: 300;
+}
+
+:focus{
+      outline-color: #ff914d;
+        outline-offset: 2px;
+}
+
+/* HOMEPAGE STYLES */
+
+#welcome-section{
+    position: fixed;
+    top:0px;
+    background-color: deepskyblue;
+    background-image: linear-gradient(to bottom right, dodgerblue, aqua);
+    height:100%;
+    width: 50%;
+    float:left; 
+    text-align: center;
+}
+
+#welcome-text{
+    display: inline-block;
+    text-align: left;
+    width:80%;
+    margin: 100px auto 0 auto;
+    color:white;
+}
+
+#top-ten-home{
+    position: absolute;
+    top: 270px;
+    bottom:50px;
+    background-color: white;
+    color: #3f3f3f;
+    width:80%;
+    overflow-y: scroll;
+}
+
+#top-ten-home::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 10px;
+    background-color: #ddd;
+}
+
+#top-ten-home::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgba(255,145,77,0.8);
+    opacity: .5;
+}
+
+#top-ten-home a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #3f3f3f;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#top-ten-home a:hover{
+    box-shadow: 0px 0px 6px rgba(0,0,0,.16);
+}
+
+#top-ten-home a:focus{
+    margin: 5px;
+    padding: 10px;
+}
+
+#login-section{
+    padding-left: 50%;
+    text-align: center;
+}
+
+#login-text {
+    display: inline-block;
+    margin-top:150px;
+    width: 300px;
+    text-align: left;
+}
+
+#login-text img{
+    display: inline-block;
+    height:50px;
+    border-radius: 25%;
+    margin-right: 20px;
+}
+
+.button {
+    text-decoration: none;
+    display: block;
+    width:100%;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 15px 0;
+    font-weight: 700;
+    border: none;
+    font-size: 80%;
+}
+
+.button:hover{
+    box-shadow: 3px 3px 6px rgba(0,0,0,.16);
+}
+
+.orange-button{
+    background-color: #ff914d;
+    color: white;
+}
+
+.create-account-button{
+    background-color: white;
+    border: solid 2px #ff914d;
+    color: #ff914d;
+}
+
+.blue-border-button{
+    padding: 13px 0;
+    background-color: aliceblue;
+    border: solid 2px deepskyblue;
+    color: deepskyblue;
+    margin-left: 20px;
+}
+
+input:disabled {
+    opacity: 0.5;
+}
+
+input:disabled:hover {
+    opacity: 0.5;
+    box-shadow: none;
+}
+
+/*ERROR STYLES */
+
+.error, .error-server{
+    display: none;
+    text-align: left;
+    padding: 10px 20px;
+    background: pink;
+    border-left: solid 4px red;
+    margin: 10px 0;
+}
+
+.error-server{
+    display: block;
+}
+
+/* HEADER STYLES */
+
+header {
+    position: relative;
+    background-color: deepskyblue;
+    text-align: left;
+    z-index: 1;
+}
+
+header img{
+    height: 40px;
+    margin: 5px 0px 10px 20px;
+}
+
+header a{
+    display:inline-block;
+    float: right;
+    padding: 20px;
+    text-decoration: none;
+    color:white;
+    font-weight: 700;
+}
+
+header a:hover{
+    font-size: 105%;
+}
+
+.home-header{
+    display:none;
+}
+
+/*LOGIN & CREATE ACCOUNT PAGE STYLES*/
+
+.outer-form{
+    width: 800px;
+    margin: 20px auto 0 auto;
+    padding: 20px 0;
+    background-color: white;
+}
+
+.login-box{
+    margin: auto;
+    width: 600px;
+    text-align: left;
+
+}
+
+.blue-box {
+    width: 800px;
+    margin:0px auto;
+    padding: 5px 0;
+    background-color: hsl(195, 100%, 90%);
+    text-align: center;
+}
+
+.login-box label{
+    font-weight: 700;
+}
+
+.text-input{
+    width: 587px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding: 5px; 
+}
+
+.account-created{
+    padding: 40px;
+    background-color: #daffa0;
+    border: limegreen solid 4px;
+    margin: 20px 40px;
+}
+
+/* LOGOUT PAGE STYLES */
+
+#logout-success {
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: aliceblue;
+    padding: 40px;
+    border: solid 5px deepskyblue;
+}
+
+
+/* BOOKMARKS PAGE STYLES */
+
+#main {
+    padding: 20px;
+}
+
+#folders {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    text-align: left;
+    padding-left:20px;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-align: left;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.folder {
+    width: 100%;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.folder:hover {
+    padding: 10px 10px 6px 10px;
+    border-bottom: 4px solid deepskyblue;
+}
+
+.your-bks-folder {
+    font-size: 150%;
+    color: #ff914d;
+}
+
+.top-ten {
+    margin-top: 50px;
+}
+
+.active-folder{
+    background-color: #fff;
+    border: 2px solid deepskyblue
+}
+
+.active-folder:hover {
+    background-color: aliceblue;
+    border-bottom: 2px solid deepskyblue;
+    padding:10px;
+
+}
+
+#bookmarks, #top-ten-bkmrks {
+    margin: 0 40px 40px 300px;
+    position: absolute;
+    left: 0px;
+    right: 40px;
+    bottom: 50px;
+    top: 95px;
+}
+
+#top-ten-bkmrks {
+    display:none;
+    background-color: white;
+    text-align: left;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, .25);
+    overflow-y: scroll;
+    bottom: auto;
+}
+
+#top-ten-bkmrks a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #3f3f3f;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#top-ten-bkmrks a:hover{
+    box-shadow: 0px 0px 6px rgba(0,0,0,.16);
+}
+
+#top-ten-bkmrks a:focus{
+    padding: 10px;
+    margin: 5px;
+}
+
+#bookmarks ul{
+    position: absolute;
+    padding:0px;
+    background-color: white;
+    text-align: left;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, .25);
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    top: 0px;
+    overflow-y: scroll;
+    
+}
+
+#bookmarks li{
+    vertical-align: middle;
+    display: block;
+    width: 100%;
+    color: #3f3f3f;
+    position: relative;
+    
+}
+
+#bookmarks a {
+    display: block;
+    text-decoration: none;
+    color: #3f3f3f;
+    font-size: 14px;
+    padding: 15px 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#bookmarks a:focus {
+    padding: 10px 15px;
+    margin:5px;
+}
+
+.bookmark-buttons{
+    display: none;
+    position: absolute;
+    right:0px;
+    top:12px;
+    background-color: white;
+    margin-right:5px;
+}
+
+.edit, .open, .delete {
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #999;
+}
+
+.edit:hover, .open:hover, .delete:hover {
+    color: #ff914d;
+}
+
+#bookmarks li:hover{
+    box-shadow: 0px 0px 6px rgba(0,0,0,.16);
+}
+
+#bookmarks li:hover .bookmark-buttons{
+    display: block;
+}
+
+#bookmarks form{
+    display: inline;
+}
+
+.scroll-icon{
+    display:none;
+    float:left;
+    position: absolute;
+    text-align: center;
+    width:100%;
+    height: 20px;
+    font-size: 120%;
+    background-image: linear-gradient(to bottom, transparent, #ff914d 150%);
+    text-shadow: 2px 2px 2px #999;
+    z-index: 1;
+    color: #777;
+}
+
+#scroll-icon {
+    bottom:13px;
+    background-image: linear-gradient(to bottom, transparent, #ff914d 150%);
+}
+
+#scroll-icon-up {
+    top:13px;
+    background-image: linear-gradient(to bottom, #ff914d -50%, transparent);
+
+}
+
+
+#not-logged-in{
+    margin: 0 0px 40px 290px;
+    padding:40px;
+    background-color: white;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, .25);
+}
+
+.no-bookmarks{
+    padding: 20px 40px;
+    color: #888;
+    font-size: 125%;
+}
+
+#add {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -50px;
+    text-align: center;
+    background-color: #ddd;
+    padding: 10px;
+}
+
+#add:hover {
+    background-color: #ff914d;
+}
+
+
+#menu-collapse{
+        display: none;
+    }
+
+
+/* POPUP STYLES */
+.popup {
+    visibility: hidden;
+    position: absolute;
+    background-color: white;
+    left:-40px;
+    right:-40px;
+    top: 10%;
+    z-index: 2;
+    border: 4px solid deepskyblue;
+}
+
+.popup-inner{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.popup-text{
+    display: inline-block;
+    margin:40px;
+    width:60%;
+    text-align: left;
+}
+
+.popup input[type=text], .popup input[type=url]{
+    width:100%; 
+    font-size: 14px;
+    padding: 8px;
+}
+
+.popup label{
+    color: #999;
+    font-weight: normal;
+}
+
+.popup .button{
+    display: inline-block;
+    width:150px;
+}
+
+.close {
+    position: -webkit-sticky;
+    position: sticky;
+    top:20px;
+    float:right;
+    font-size: 75%;
+    margin: 20px;
+    text-transform: uppercase;
+    padding: 5px;
+    font-weight: bold;
+    color: #ff914d;
+    background-color: rgba(255,255,255,.6);
+    border: none;
+}
+
+.close:hover {
+    background-color: #ddd;
+}
+
+.secret {
+    display: none;
+}
+
+#urlDelete, #nameDelete { 
+    padding-left: 10px;
+}
+
+#db-error, #db-success {
+    display: none;
+    margin: 0 55px 0px 275px;
+    padding: 2px;
+}
+
+#db-error {
+    color: red;
+    background-color: pink;
+}
+
+#db-success {
+    color: darkgreen;
+    background-color: lightgreen
+}
+
+#add-error, #edit-error{
+    display: none;
+    background: pink;
+    border-left: 5px solid red;
+    padding: 5px 30px;
+}
+
+#db-error-close, #db-success-close {
+    position: absolute;
+    right: 85px;
+    font-size: 12px;
+    padding: 2px;
+}
+
+#db-error-close { color: red;}
+#db-success-close { color: darkgreen;}
+
+.underline {
+    text-decoration: underline;
+}
+
+@media (max-width:1188px){
+    #top-ten-home{
+        top: 300px;
+    }
+}
+
+@media (max-width:850px){
+    #welcome-section{
+        position: static;
+        width: 100%;
+        height:auto;
+    }
+    
+    #welcome-text{
+        margin: 50px auto;
+    }
+    
+    #top-ten-home{
+        width: 100%;
+        position: static;
+        height:250px;
+    }
+    
+    #login-section{
+        padding: 40px;
+        text-align: center;
+    }
+
+    #login-text {
+        margin-top:0px;
+    }
+    
+    .home-header{
+        display:block;
+    }  
+    
+    .outer-form{
+        width: 100%;
+        margin: 0;
+    }
+
+    .login-box{
+        margin: 0px 30px 20px 30px;
+        width: auto;
+    }
+    
+    .text-input{
+        width:97%;
+    }
+    
+    .blue-box {
+        width: 100%;
+        margin: 0px;
+    }
+
+}
+
+@media (max-width:750px){
+    #bookmarks {
+    margin: 0 10px 40px 150px;
+    }
+    
+    #menu {
+        position: absolute;
+        background-color: #ff914d;
+        width:100px;
+        height:100%;
+        top:0px;
+        left:0px;
+    }
+    
+    #menu-collapse{
+        display:block;
+        padding-top:80px;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        cursor:pointer;
+    }
+    
+    #folders {
+        display:none;
+        position: fixed;
+        width: 250px;
+        height: 100%;
+        text-align: left;
+        z-index: 1;
+        background-color:#eee;
+        top:60px;
+        left:100px;
+        padding: 20px;
+        box-shadow: 6px 6px 6px rgba(0, 0, 0, .25);
+    }
+    
+    #menu:hover #folders{
+        display: block;
+    }
+}

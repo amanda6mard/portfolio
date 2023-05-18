@@ -1,0 +1,11 @@
+[27-May-2019 13:00:40 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/wicke650/public_html/staging/bookmarker/home/index.php on line 33
+[27-May-2019 13:02:56 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/wicke650/public_html/staging/bookmarker/home/index.php on line 33
+[27-May-2019 13:04:46 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/wicke650/public_html/staging/bookmarker/home/index.php on line 33
+[27-May-2019 13:07:43 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/wicke650/public_html/staging/bookmarker/home/index.php on line 33
+[27-May-2019 13:07:59 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/wicke650/public_html/staging/bookmarker/home/index.php on line 33
+[27-May-2019 13:08:07 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/wicke650/public_html/staging/bookmarker/home/index.php on line 35
+[27-May-2019 13:08:22 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/wicke650/public_html/staging/bookmarker/home/index.php on line 35
+[27-May-2019 13:08:34 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/wicke650/public_html/staging/bookmarker/home/index.php on line 35
+[27-May-2019 13:09:45 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/wicke650/public_html/staging/bookmarker/home/index.php on line 33
+[27-May-2019 13:10:10 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/wicke650/public_html/staging/bookmarker/home/index.php on line 33
+[27-May-2019 13:10:11 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/wicke650/public_html/staging/bookmarker/home/index.php on line 33
