@@ -1,0 +1,12 @@
+<div class="card text-center w-100">
+  <span *ngIf="product.imageFilename === null; else elseBlock"><img  src="assets/shared/media/placeholder.jpg" class="card-img-top" alt="no image"></span>
+  <ng-template #elseBlock><img [src]="'assets/shared/media/' + product.imageFilename" class="card-img-top" [alt]="product.name"></ng-template>
+  <div class="card-body">
+    <h5 class="card-title">
+      <a routerLink="/product/{{product.id}}">{{product.name}}</a>
+    </h5>
+    <p>a
+      Price: {{product.price | currency:'CAD'}}
+    </p>
+  </div>
+</div>

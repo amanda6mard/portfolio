@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div *ngIf="product.imageFilename === null; else imageBlock"><img src="assets/shared/media/placeholder.jpg" class="img-fluid"
+        alt="no image"></div>
+      <ng-template #imageBlock><img [src]="'assets/shared/media/'+product.imageFilename" class="img-fluid"
+        [alt]="product.name"></ng-template>
+    </div>
+    <div class="col">
+      <h2>{{product.name}}</h2>
+      <h6 class="text-muted" *ngIf="product.category !== null">In <strong>{{product.category}}</strong></h6>
+      <p>
+        Price: ${{product.price}}
+      </p>
+      <p class="text-muted">Description:</p>
+      <p>{{product.description}}</p>
+      <form #form="ngForm">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <input ngModel #quantity="ngModel" type="number" min="1" step="1" class="form-control"
+                id="quantity" [(ngModel)]="inputQuantity" name="quantity" id="quantity" required>
+            </div>
+            <div class="col-sm-10">
+              <button [disabled]="!form.valid" class="btn btn-primary" (click)="addItemToWishList(product.id, inputQuantity)">Add to
+                wish list</button>
+            </div>
+          </div>
+        </div>
+      </form>
+      <div *ngIf="quantity.errors?.required && quantity.touched"class="alert alert-danger" role="alert">Must have a quantity</div>
+      <div *ngIf="quantity.errors?.min && quantity.touched"class="alert alert-danger" role="alert">Must have a positive quantity</div>
+      <div *ngIf="added" class="alert alert-success" role="alert">{{product.name}} added to wish list</div>
+    </div>
+  </div>
+</div>

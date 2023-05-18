@@ -1,0 +1,4 @@
+<div *ngIf="categories.length !== 0" class="text-center">
+  <strong>Product categories: </strong>
+  <a *ngFor="let category of categories" class= "btn btn-light mx-1" [routerLink]="['/products-by-category/', category]">{{category}}</a>
+</div>

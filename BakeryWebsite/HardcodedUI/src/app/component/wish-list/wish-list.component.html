@@ -1,0 +1,27 @@
+<h2>Your Wish List</h2>
+		<table class="table">
+			<thead>
+				<tr>
+					<th scope="col">Product Name</th>
+					<th scope="col">Product Price</th>
+					<th scope="col">Quantity</th>
+					<th scope="col">Item Total Price</th>
+					<th scope="col"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr *ngFor="let product of wishListProducts | keyvalue">
+					<td>{{product.value.name}}</td>
+					<td>{{product.value.price | currency :'CAD'}}</td>
+					<td>{{product.key.quantity}}</td>
+					<td>{{(product.value.price * product.key.quantity) | currency :'CAD'}}</td>
+					<td><a class="btn-link pointer" (click)="removeFromWishList(product.value.id)">remove</a></td>
+				</tr>
+      </tbody>
+		</table>
+
+    <div *ngIf="wishListProducts.size == 0">No products in wish list.</div>
+
+		<h3 class="text-end">
+			LIST TOTAL : ${{totalPrice}}
+		</h3>
