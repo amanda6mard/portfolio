@@ -1,0 +1,7 @@
+/Users/amandasimard/Documents/FDM/Spring-Rest-Project/ProductAPI/src/main/java/com/fdmgroup/productapi/ProductApiApplication.java
+/Users/amandasimard/Documents/FDM/Spring-Rest-Project/ProductAPI/src/main/java/com/fdmgroup/productapi/PersistExampleProducts.java
+/Users/amandasimard/Documents/FDM/Spring-Rest-Project/ProductAPI/src/main/java/com/fdmgroup/productapi/repo/JpaProductRepository.java
+/Users/amandasimard/Documents/FDM/Spring-Rest-Project/ProductAPI/src/main/java/com/fdmgroup/productapi/dao/ProductDAO.java
+/Users/amandasimard/Documents/FDM/Spring-Rest-Project/ProductAPI/src/main/java/com/fdmgroup/productapi/controller/ProductController.java
+/Users/amandasimard/Documents/FDM/Spring-Rest-Project/ProductAPI/src/main/java/com/fdmgroup/productapi/model/Product.java
+/Users/amandasimard/Documents/FDM/Spring-Rest-Project/ProductAPI/src/main/java/com/fdmgroup/productapi/dao/ICrud.java
