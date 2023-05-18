@@ -1,0 +1,40 @@
+<!-- Javascript for metronome  -->
+<script src='scripts/metronome.js'></script>
+
+<!-- metronome -->
+<audio id="click">
+    <source src="media/click.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+<div id="metro-container">
+    <!-- audio for metronome -->
+    <p><span id="BPM">60</span> BPM</p>
+    <div class="button-container">   
+        <div id="shadow"></div>
+        <div id="play-button"><i class="fas fa-play"></i></div>
+    </div> 
+    <div class="slide-container">
+        <i class="fas fa-minus"></i>
+        <input type="range" min="40" max="220" value="60" class="slider" id="bpm-input">
+        <i class="fas fa-plus"></i>
+    </div>
+    <div id="audio-box">
+        <strong><span id="audio-toggle">Sound on <i class="fas fa-volume-up"></i></span></strong>
+    </div>
+    <div class="unit tempo-box">
+        <label>Tempos by name</label>
+        <select id="tempo">
+            <option value="40">Lento | 40-60 </option>
+            <option value="50">Largo | 40-60 </option>
+            <option value="60">Larghetto | 60-66</option>
+            <option value="70">Adagio | 66-76</option>
+            <option value="80">Andante | 76-108</option>
+            <option value="95">Andantino | 90-108</option>
+            <option value="110">Moderato | 108-120</option>
+            <option value="125">Allegretto | 115-130</option>
+            <option value="130">Allegro | 120-168</option>
+            <option value="140">Vivace | 140-168</option>
+            <option value="180">Presto | 168-200</option>
+        </select>
+    </div>
+</div>

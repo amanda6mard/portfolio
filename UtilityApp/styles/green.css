@@ -1,0 +1,82 @@
+/* NAVIGATION BAR */
+
+nav {
+    background-color: #3f3f3f;
+    color: #f3f3f3;
+}
+
+.nav-info{
+    color: #3f3f3f;
+    background-color: #E5FFE9;
+}
+
+nav li{
+    color: #f3f3f3;
+}
+
+.active {
+    background-color:#53B55E;
+}
+
+nav li:hover{
+    background-color: black;
+}
+
+.active:hover {
+    background-color:#53B55E;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #53B55E;
+    color: white;
+}
+
+/* CONTENT */ 
+
+h3 { color: #53B55E;}
+
+
+#tool-title {
+    background-color: #53B55E;
+    color: #f3f3f3;
+}
+
+.unit {
+    background-color: #E5FFE9;
+}
+
+.number {
+    background-color: #E5FFE9;
+}
+
+#repayment-term{ 
+    background-color: #E5FFE9; 
+}
+
+.slider::-webkit-slider-thumb {
+      background: #53B55E;
+}
+
+.slider::-moz-range-thumb {
+      background: #53B55E;
+}
+
+.slide-container {
+    color: #53B55E;
+}
+
+#play-button {
+    background-color: #53B55E;
+}
+
+#shadow {
+    background-color: #53B55E; 
+    box-shadow: 0 0 40px #53B55E;
+}
+
+    
+    
+
+

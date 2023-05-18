@@ -1,0 +1,38 @@
+<!-- Javascript for measurement converter -->
+<script src='scripts/measurement-converter.js'></script>
+
+<!-- measurement convert -->
+<div id='meas-container'>
+    <p>
+        <select id='measurement-type'>
+            <option value='weight'>
+                weight
+            </option>
+            <option value='length'>
+                length
+            </option>
+            <option value='area'>
+                area
+            </option>
+            <option value='volume'>
+                volume
+            </option>
+        </select>
+    </p>
+    <div class='units'> 
+        <div id='unit1' class='unit'>
+            <div class='number'><input id='from-number' placeholder='0' autocomplete='off'></div>
+            <select id='units-1'></select>
+        </div> 
+        <span id='equals'>equals</span>
+        <div id='unit2' class='unit'>
+            <div class='number' id='result-display'></div>
+            <select id='units-2'></select>
+        </div> 
+    </div>
+    <p>
+        <span id="error-msg">
+            There was no error. 
+        </span>
+    </p> 
+</div>

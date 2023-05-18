@@ -1,0 +1,38 @@
+ <!-- Javascript for mortgage calculator -->
+<script src='scripts/mortgage-calculator.js'></script> 
+ 
+ <!-- mortgage calculator -->
+<div id="mort-container">
+    <div class='units'>
+        <div class='unit mort'>
+            <label>Price</label>
+            <div class='number'>$<input id='price' placeholder='0' autocomplete='off'></div>
+        </div> 
+        <div class='unit mort'>
+            <label>Deposit</label>
+            <div class='number'>$<input id='deposit' placeholder='0' autocomplete='off'></div>
+        </div>
+        <div class='unit mort raise'>
+            <label>Repayment Term</label>
+            <select id='repayment-term'>
+            </select>
+        </div>
+        <div class='unit mort'>
+            <label>Yearly Interest Rate</label>
+            <div class='number'><input id='interest' placeholder='0' autocomplete='off'>%</div>
+        </div> 
+    </div>
+    <p>
+        <span id='error-msg-mort'>
+            There was no error. 
+        </span>
+    </p> 
+    <h1>Monthly payment is: $<span id="mort-result"></span></h1>
+    <p>
+        <span style="font-size: 125%"><strong>Loan: $<span id="loan-out"></span></strong></span><br>
+        Price: $<span id="price-out"></span><br>
+        Deposit: $<span id="dep-out"></span><br>
+        Term: <span id="term-out"></span> years<br>
+        Yearly Interest Rate: <span id="int-out"></span>%<br>
+    </p>
+</div>

@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway');
+
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #3f3f3f;
+}
+
+body, html {
+    height: 100%;
+}
+
+/* NAVIGATION BAR */
+
+nav {
+    font-family: 'Raleway', sans-serif;
+    display: block;
+    position: fixed;
+    height: 100%;
+    width: 300px;
+    z-index: 1;
+}
+
+.nav-info{
+    display: block;
+    padding: 20px;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    display: block;
+    padding: 30px 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 150%;
+    cursor: pointer;
+}
+
+.active {
+}
+
+nav li:hover{
+}
+
+.active:hover {
+    text-shadow: 3px 3px 6px rgba(0,0,0,.5);
+}
+
+.color-picker{
+    display: block;
+    color: #3f3f3f;
+    background-color: #f3f3f3;
+    padding: 20px 0 10px 20px;
+    position: absolute;
+    bottom: 0;
+    width:280px
+}
+
+.color{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin: 15px;
+    background-color: black;
+    cursor: pointer;
+}
+
+.color:hover { opacity: .7;}
+
+#color1 {
+    background-image: url(../media/purple.png);
+}
+
+#color2 {
+    background-image: url(../media/green.png);
+}
+
+#color3 {
+    background-image: url(../media/blue.png);
+}
+
+.mobile { 
+    display: none; 
+    width: 100px;
+}
+
+/* FOOTER */
+
+footer {
+    position: relative;
+    display: block;
+    text-align: right;
+    width: 100%;
+}
+
+.footer-text{
+    padding: 15px 30px;
+}
+
+/* CONTENT */ 
+
+h3 { }
+
+section {
+    display: block;
+    position: relative;
+    padding: 30px 50px 30px 350px;
+    z-index: 0;
+    min-height: 81%;
+}
+
+#tool-title {
+    display:block;
+    position: relative;
+    top: 9px;
+    font-size: 150%;
+    padding: 10px;
+    font-weight: bolder;
+    border-radius: 10px 10px 0 0;
+    border: solid 2px #3f3f3f;
+}
+
+#tool-block{
+    border-radius: 10px;
+    margin: 0 0 30px 0;
+    border: solid 2px #3f3f3f;
+    text-align: center;
+}
+
+#meas-container{
+    display: inline-block;
+    width: 70%;
+    margin: 20px auto;
+}
+
+select {
+    width: 100%;
+    height: 36px;
+    background-color: #f3f3f3;
+    border: none;
+    font-size: 16px
+}
+
+.unit {
+    display:inline-block;
+    width: 40%;
+    border-radius: 7px;
+}
+
+#unit1 {
+    float:left;
+}
+
+#unit2 {
+    float:right;
+}
+
+.number {
+    height:56px;
+    line-height: 56px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 10px;
+}
+
+input {
+    height:56px;
+    width:90%;
+    line-height: 56px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 24px;
+    border: none;
+    background-color: transparent;
+}
+
+.units {
+    display: inline-block;
+    width: 100%;
+}
+
+#error-msg {
+    display: inline-block;
+    visibility: hidden;
+    width: 95%;
+    margin-top: 10px;
+}
+
+#equals{
+    position: relative;
+    top: 35px;
+    font-size: 18px;
+}
+
+/* MEASUREMENT CONVERTER RESPONSIVENESS */
+
+@media (max-width: 1200px) {
+    #meas-container{
+        width: 95%;
+    }
+}
+
+@media (max-width: 900px) {
+    .unit{ width: 95%;}
+    
+    #unit1, #unit2{ float:none;}
+    
+    #unit1 { margin-bottom: 25px;}
+    
+    #unit2 { margin-top: 25px;}
+    
+    #equals{ top:0px; }
+}
+
+@media (max-width: 750px) {
+    
+    .main { display:none;}
+    .mobile { display: block; }
+    section { padding: 30px 50px 30px 150px;} 
+}
+
+
+@media (max-width: 500px) {
+    footer { font-size: 75%; }
+    section { padding: 30px 30px 30px 130px;} 
+}
+
+
+/* MORTGAGE CALCULATOR STYLES */
+
+.units .mort {
+    background: transparent;
+    margin: 15px;
+    width: 44%;
+    text-align: left;
+}
+
+#mort-container{
+    display: inline-block;
+    width: 99%;
+    margin: 20px auto;
+}
+
+label {
+    display: inline-block;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 110%;
+}
+
+#repayment-term{
+    height:56px;
+    border-radius: 10px;
+}
+
+.raise {
+    position: relative;
+    top: -4px;
+}
+
+#error-msg-mort {
+    display: inline-block;
+    visibility: hidden;
+    width: 95%;
+    margin-top: 10px;
+}
+
+/* MORTGAGE CALCULATOR RESPONSIVENESS */
+
+@media (max-width: 950px) {
+    .units .mort{ width: 90%;}
+}
+
+/* METRONOME STYLES*/
+
+.slider {
+      -webkit-appearance: none;  /* Override default CSS styles */
+      appearance: none;
+      width: 75%; /* Full-width */
+      height: 10px; /* Specified height */
+      background: #d3d3d3; /* Grey background */
+      outline: none; /* Remove outline */
+      opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+      -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+      transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.slider::-webkit-slider-thumb {
+      -webkit-appearance: none; /* Override default look */
+      appearance: none;
+      width: 25px; /* Set a specific slider handle width */
+      height: 25px; /* Slider handle height */
+      border-radius: 100%;
+      background: #4CAF50; /* Green background */
+      cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+      width: 25px; /* Set a specific slider handle width */
+      height: 25px; /* Slider handle height */
+      background: #4CAF50; /* Green background */
+      cursor: pointer; /* Cursor on hover */
+}
+
+#metro-container{
+    display: inline-block;
+    width: 90%;
+    margin: 20px auto;
+}
+
+#BPM {
+    font-size: 400%;
+}
+
+#play-button{
+    display: inline-block;
+    position: relative;
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    margin: 0 0 30px 0 ;
+    line-height: 70px;
+    color: #f3f3f3;
+    font-size: 24px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+#shadow {
+    display:  none;
+    position: absolute;
+    z-index: 0;
+    top: -10px;
+    left: -10px;
+    opacity: .3;
+    height: 90px;
+    width: 90px;
+    border-radius: 100%;
+}
+
+.button-container{
+    display: inline-block;
+    position: relative;
+}
+
+#audio-box{
+    display: block;
+    float: right;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.tempo-box { 
+    text-align: left;
+    margin: 20px 8% 0 8%;
+    width: 80%;
+
+}
+
+    
+    
+
+
