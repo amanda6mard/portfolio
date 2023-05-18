@@ -1,0 +1,107 @@
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+var fakeDatabase = {
+    "stories" : [
+        {
+            "id" : 1,
+            "title" : "Meet Iggie the Iguana",
+            "date" : new Date("Aug 5 2021"),
+            "feature-image" : "../shared/media/iguana.jpg",
+            "author" : "Ima Writer",
+            "preview-text" : "Pet rescues welcomes Iggie to the family! Learn all about caring for iguanas in this story about our newest resident.",
+            "article-text" : `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt, diam eu ullamcorper congue, diam metus pulvinar orci, et congue diam nibh non orci. Nunc nec auctor mauris. Aenean aliquam iaculis felis vitae pharetra. Ut dignissim nisl eros, eget auctor massa interdum tempus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis ultricies eros justo, vel maximus massa vehicula a. Sed rhoncus accumsan eros a placerat. Nam finibus eros quis magna bibendum, eu mollis lacus sodales. Vestibulum ipsum lectus, gravida ac quam eu, tincidunt sollicitudin lacus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce blandit, eros eu maximus condimentum, purus dolor porta justo, non condimentum massa urna et mauris. Integer cursus est in eleifend lobortis.
+
+            Mauris pharetra erat suscipit fringilla ornare. Maecenas interdum, nibh ac dignissim ultrices, mi eros fringilla mauris, eget iaculis nulla orci sed odio. In pretium ullamcorper lacus at dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum consectetur non lorem a scelerisque. Vestibulum accumsan accumsan lacus eget gravida. Aenean interdum lorem ut blandit laoreet. Maecenas dignissim dolor in ex dignissim, nec maximus odio aliquam. Phasellus eget diam purus. Quisque congue sem in faucibus lobortis. Sed interdum purus eu posuere fermentum.
+            
+            Morbi ullamcorper nulla et mi accumsan ultricies. Donec pellentesque ultricies elit, in blandit odio gravida porttitor. Suspendisse potenti. Phasellus turpis nisi, sollicitudin ut varius a, ultrices sed lacus. Aenean tempor eros ipsum, nec congue nisi luctus pellentesque. Vestibulum vel bibendum massa. Nulla eget malesuada mi. Vestibulum condimentum vulputate arcu, quis posuere metus finibus sit amet. Etiam elit mauris, consequat eget mauris eu, gravida ullamcorper ex. Morbi iaculis nunc a sagittis molestie. Morbi imperdiet, ex quis scelerisque dignissim, nibh nisi tincidunt felis, ut dictum sem diam fringilla erat. Sed id felis mollis, accumsan ex eget, tincidunt ipsum. Vestibulum a cursus justo. Vivamus et lacus sit amet mi varius lacinia. Vivamus rutrum metus tortor, viverra blandit nisi pulvinar quis.
+            
+            Fusce nec maximus sapien. In aliquam eu lorem nec dapibus. Nullam efficitur condimentum purus, quis semper leo eleifend nec. Maecenas scelerisque augue id ante scelerisque, suscipit viverra ex eleifend. Phasellus venenatis ullamcorper ipsum, quis egestas quam dignissim vitae. Pellentesque imperdiet ultrices mauris, dignissim consectetur mauris. Aliquam consectetur gravida elit, elementum auctor elit rhoncus vitae. Nunc sollicitudin eu metus a commodo. Fusce condimentum blandit ligula vitae aliquam. Nulla ac tortor at risus commodo fermentum. Cras vestibulum diam a enim dictum eleifend.
+            
+            Duis ultrices hendrerit libero quis viverra. Vestibulum laoreet neque nec tempus aliquam. Vestibulum interdum sem quis urna elementum congue. Pellentesque elementum volutpat mollis. Nulla facilisi. Proin dapibus lacus nunc, eget pretium nisi facilisis sed. Donec auctor bibendum libero, elementum sodales tellus semper id. Pellentesque dignissim sapien nec purus fringilla mattis. Nunc eros neque, mattis et vehicula eu, vestibulum eget ante. Vivamus mattis libero tincidunt scelerisque congue. Donec eleifend, enim imperdiet euismod sodales, enim risus molestie enim, molestie molestie felis diam sed nibh. Vestibulum ac justo aliquet, ornare velit id, venenatis ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras pellentesque sapien vel odio fringilla placerat sit amet vel leo.`
+        },
+        {
+            "id" : 2,
+            "title" : "Cat, Imma Kitty Cat",
+            "date" : new Date("Aug 15 2021"),
+            "feature-image" : "../shared/media/cat.jpg",
+            "author" : "Ivan Akat",
+            "preview-text" : "Volunteers helped us make this video celebrating cats.",
+            "article-text" : `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt, diam eu ullamcorper congue, diam metus pulvinar orci, et congue diam nibh non orci. Nunc nec auctor mauris. Aenean aliquam iaculis felis vitae pharetra. Ut dignissim nisl eros, eget auctor massa interdum tempus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis ultricies eros justo, vel maximus massa vehicula a. Sed rhoncus accumsan eros a placerat. Nam finibus eros quis magna bibendum, eu mollis lacus sodales. Vestibulum ipsum lectus, gravida ac quam eu, tincidunt sollicitudin lacus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce blandit, eros eu maximus condimentum, purus dolor porta justo, non condimentum massa urna et mauris. Integer cursus est in eleifend lobortis.
+
+            Mauris pharetra erat suscipit fringilla ornare. Maecenas interdum, nibh ac dignissim ultrices, mi eros fringilla mauris, eget iaculis nulla orci sed odio. In pretium ullamcorper lacus at dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum consectetur non lorem a scelerisque. Vestibulum accumsan accumsan lacus eget gravida. Aenean interdum lorem ut blandit laoreet. Maecenas dignissim dolor in ex dignissim, nec maximus odio aliquam. Phasellus eget diam purus. Quisque congue sem in faucibus lobortis. Sed interdum purus eu posuere fermentum.
+            
+            Morbi ullamcorper nulla et mi accumsan ultricies. Donec pellentesque ultricies elit, in blandit odio gravida porttitor. Suspendisse potenti. Phasellus turpis nisi, sollicitudin ut varius a, ultrices sed lacus. Aenean tempor eros ipsum, nec congue nisi luctus pellentesque. Vestibulum vel bibendum massa. Nulla eget malesuada mi. Vestibulum condimentum vulputate arcu, quis posuere metus finibus sit amet. Etiam elit mauris, consequat eget mauris eu, gravida ullamcorper ex. Morbi iaculis nunc a sagittis molestie. Morbi imperdiet, ex quis scelerisque dignissim, nibh nisi tincidunt felis, ut dictum sem diam fringilla erat. Sed id felis mollis, accumsan ex eget, tincidunt ipsum. Vestibulum a cursus justo. Vivamus et lacus sit amet mi varius lacinia. Vivamus rutrum metus tortor, viverra blandit nisi pulvinar quis.
+            
+            Fusce nec maximus sapien. In aliquam eu lorem nec dapibus. Nullam efficitur condimentum purus, quis semper leo eleifend nec. Maecenas scelerisque augue id ante scelerisque, suscipit viverra ex eleifend. Phasellus venenatis ullamcorper ipsum, quis egestas quam dignissim vitae. Pellentesque imperdiet ultrices mauris, dignissim consectetur mauris. Aliquam consectetur gravida elit, elementum auctor elit rhoncus vitae. Nunc sollicitudin eu metus a commodo. Fusce condimentum blandit ligula vitae aliquam. Nulla ac tortor at risus commodo fermentum. Cras vestibulum diam a enim dictum eleifend.
+            
+            Duis ultrices hendrerit libero quis viverra. Vestibulum laoreet neque nec tempus aliquam. Vestibulum interdum sem quis urna elementum congue. Pellentesque elementum volutpat mollis. Nulla facilisi. Proin dapibus lacus nunc, eget pretium nisi facilisis sed. Donec auctor bibendum libero, elementum sodales tellus semper id. Pellentesque dignissim sapien nec purus fringilla mattis. Nunc eros neque, mattis et vehicula eu, vestibulum eget ante. Vivamus mattis libero tincidunt scelerisque congue. Donec eleifend, enim imperdiet euismod sodales, enim risus molestie enim, molestie molestie felis diam sed nibh. Vestibulum ac justo aliquet, ornare velit id, venenatis ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras pellentesque sapien vel odio fringilla placerat sit amet vel leo.`
+        },
+        {
+            "id" : 3,
+            "title" : "Polly the Parrot Picked a Peck of Pickled Peppers",
+            "date" : new Date("Aug 27 2021"),
+            "feature-image" : "../shared/media/parrot.jpg",
+            "author" : "Bertie Beakers",
+            "preview-text" : "Teaching our favorite parrot some tongues twisters",
+            "article-text" : `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt, diam eu ullamcorper congue, diam metus pulvinar orci, et congue diam nibh non orci. Nunc nec auctor mauris. Aenean aliquam iaculis felis vitae pharetra. Ut dignissim nisl eros, eget auctor massa interdum tempus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis ultricies eros justo, vel maximus massa vehicula a. Sed rhoncus accumsan eros a placerat. Nam finibus eros quis magna bibendum, eu mollis lacus sodales. Vestibulum ipsum lectus, gravida ac quam eu, tincidunt sollicitudin lacus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce blandit, eros eu maximus condimentum, purus dolor porta justo, non condimentum massa urna et mauris. Integer cursus est in eleifend lobortis.
+
+            Mauris pharetra erat suscipit fringilla ornare. Maecenas interdum, nibh ac dignissim ultrices, mi eros fringilla mauris, eget iaculis nulla orci sed odio. In pretium ullamcorper lacus at dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum consectetur non lorem a scelerisque. Vestibulum accumsan accumsan lacus eget gravida. Aenean interdum lorem ut blandit laoreet. Maecenas dignissim dolor in ex dignissim, nec maximus odio aliquam. Phasellus eget diam purus. Quisque congue sem in faucibus lobortis. Sed interdum purus eu posuere fermentum.
+            
+            Morbi ullamcorper nulla et mi accumsan ultricies. Donec pellentesque ultricies elit, in blandit odio gravida porttitor. Suspendisse potenti. Phasellus turpis nisi, sollicitudin ut varius a, ultrices sed lacus. Aenean tempor eros ipsum, nec congue nisi luctus pellentesque. Vestibulum vel bibendum massa. Nulla eget malesuada mi. Vestibulum condimentum vulputate arcu, quis posuere metus finibus sit amet. Etiam elit mauris, consequat eget mauris eu, gravida ullamcorper ex. Morbi iaculis nunc a sagittis molestie. Morbi imperdiet, ex quis scelerisque dignissim, nibh nisi tincidunt felis, ut dictum sem diam fringilla erat. Sed id felis mollis, accumsan ex eget, tincidunt ipsum. Vestibulum a cursus justo. Vivamus et lacus sit amet mi varius lacinia. Vivamus rutrum metus tortor, viverra blandit nisi pulvinar quis.
+            
+            Fusce nec maximus sapien. In aliquam eu lorem nec dapibus. Nullam efficitur condimentum purus, quis semper leo eleifend nec. Maecenas scelerisque augue id ante scelerisque, suscipit viverra ex eleifend. Phasellus venenatis ullamcorper ipsum, quis egestas quam dignissim vitae. Pellentesque imperdiet ultrices mauris, dignissim consectetur mauris. Aliquam consectetur gravida elit, elementum auctor elit rhoncus vitae. Nunc sollicitudin eu metus a commodo. Fusce condimentum blandit ligula vitae aliquam. Nulla ac tortor at risus commodo fermentum. Cras vestibulum diam a enim dictum eleifend.
+            
+            Duis ultrices hendrerit libero quis viverra. Vestibulum laoreet neque nec tempus aliquam. Vestibulum interdum sem quis urna elementum congue. Pellentesque elementum volutpat mollis. Nulla facilisi. Proin dapibus lacus nunc, eget pretium nisi facilisis sed. Donec auctor bibendum libero, elementum sodales tellus semper id. Pellentesque dignissim sapien nec purus fringilla mattis. Nunc eros neque, mattis et vehicula eu, vestibulum eget ante. Vivamus mattis libero tincidunt scelerisque congue. Donec eleifend, enim imperdiet euismod sodales, enim risus molestie enim, molestie molestie felis diam sed nibh. Vestibulum ac justo aliquet, ornare velit id, venenatis ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras pellentesque sapien vel odio fringilla placerat sit amet vel leo.`
+        },
+        {
+            "id" : 4,
+            "title" : "FamousFoodChain donates 50K",
+            "date" : new Date("Sep 5 2021"),
+            "feature-image" : "../shared/media/guinea-pigs.jpg",
+            "author" : "Ima Writer",
+            "preview-text" : "Pet Rescue recently recieved a 50K donation from FamousFoodChain.",
+            "article-text" : `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt, diam eu ullamcorper congue, diam metus pulvinar orci, et congue diam nibh non orci. Nunc nec auctor mauris. Aenean aliquam iaculis felis vitae pharetra. Ut dignissim nisl eros, eget auctor massa interdum tempus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis ultricies eros justo, vel maximus massa vehicula a. Sed rhoncus accumsan eros a placerat. Nam finibus eros quis magna bibendum, eu mollis lacus sodales. Vestibulum ipsum lectus, gravida ac quam eu, tincidunt sollicitudin lacus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce blandit, eros eu maximus condimentum, purus dolor porta justo, non condimentum massa urna et mauris. Integer cursus est in eleifend lobortis.
+
+            Mauris pharetra erat suscipit fringilla ornare. Maecenas interdum, nibh ac dignissim ultrices, mi eros fringilla mauris, eget iaculis nulla orci sed odio. In pretium ullamcorper lacus at dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum consectetur non lorem a scelerisque. Vestibulum accumsan accumsan lacus eget gravida. Aenean interdum lorem ut blandit laoreet. Maecenas dignissim dolor in ex dignissim, nec maximus odio aliquam. Phasellus eget diam purus. Quisque congue sem in faucibus lobortis. Sed interdum purus eu posuere fermentum.
+            
+            Morbi ullamcorper nulla et mi accumsan ultricies. Donec pellentesque ultricies elit, in blandit odio gravida porttitor. Suspendisse potenti. Phasellus turpis nisi, sollicitudin ut varius a, ultrices sed lacus. Aenean tempor eros ipsum, nec congue nisi luctus pellentesque. Vestibulum vel bibendum massa. Nulla eget malesuada mi. Vestibulum condimentum vulputate arcu, quis posuere metus finibus sit amet. Etiam elit mauris, consequat eget mauris eu, gravida ullamcorper ex. Morbi iaculis nunc a sagittis molestie. Morbi imperdiet, ex quis scelerisque dignissim, nibh nisi tincidunt felis, ut dictum sem diam fringilla erat. Sed id felis mollis, accumsan ex eget, tincidunt ipsum. Vestibulum a cursus justo. Vivamus et lacus sit amet mi varius lacinia. Vivamus rutrum metus tortor, viverra blandit nisi pulvinar quis.
+            
+            Fusce nec maximus sapien. In aliquam eu lorem nec dapibus. Nullam efficitur condimentum purus, quis semper leo eleifend nec. Maecenas scelerisque augue id ante scelerisque, suscipit viverra ex eleifend. Phasellus venenatis ullamcorper ipsum, quis egestas quam dignissim vitae. Pellentesque imperdiet ultrices mauris, dignissim consectetur mauris. Aliquam consectetur gravida elit, elementum auctor elit rhoncus vitae. Nunc sollicitudin eu metus a commodo. Fusce condimentum blandit ligula vitae aliquam. Nulla ac tortor at risus commodo fermentum. Cras vestibulum diam a enim dictum eleifend.
+            
+            Duis ultrices hendrerit libero quis viverra. Vestibulum laoreet neque nec tempus aliquam. Vestibulum interdum sem quis urna elementum congue. Pellentesque elementum volutpat mollis. Nulla facilisi. Proin dapibus lacus nunc, eget pretium nisi facilisis sed. Donec auctor bibendum libero, elementum sodales tellus semper id. Pellentesque dignissim sapien nec purus fringilla mattis. Nunc eros neque, mattis et vehicula eu, vestibulum eget ante. Vivamus mattis libero tincidunt scelerisque congue. Donec eleifend, enim imperdiet euismod sodales, enim risus molestie enim, molestie molestie felis diam sed nibh. Vestibulum ac justo aliquet, ornare velit id, venenatis ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras pellentesque sapien vel odio fringilla placerat sit amet vel leo.`
+        },
+        {
+            "id" : 5,
+            "title" : "New Pet Legislation You Should Know About",
+            "date" : new Date("Sep 11 2021"),
+            "feature-image" : "../shared/media/dog.jpg",
+            "author" : "Ima Writer",
+            "preview-text" : "Something about something happening in politics or whatever.",
+            "article-text" : `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt, diam eu ullamcorper congue, diam metus pulvinar orci, et congue diam nibh non orci. Nunc nec auctor mauris. Aenean aliquam iaculis felis vitae pharetra. Ut dignissim nisl eros, eget auctor massa interdum tempus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis ultricies eros justo, vel maximus massa vehicula a. Sed rhoncus accumsan eros a placerat. Nam finibus eros quis magna bibendum, eu mollis lacus sodales. Vestibulum ipsum lectus, gravida ac quam eu, tincidunt sollicitudin lacus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce blandit, eros eu maximus condimentum, purus dolor porta justo, non condimentum massa urna et mauris. Integer cursus est in eleifend lobortis.
+
+            Mauris pharetra erat suscipit fringilla ornare. Maecenas interdum, nibh ac dignissim ultrices, mi eros fringilla mauris, eget iaculis nulla orci sed odio. In pretium ullamcorper lacus at dapibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum consectetur non lorem a scelerisque. Vestibulum accumsan accumsan lacus eget gravida. Aenean interdum lorem ut blandit laoreet. Maecenas dignissim dolor in ex dignissim, nec maximus odio aliquam. Phasellus eget diam purus. Quisque congue sem in faucibus lobortis. Sed interdum purus eu posuere fermentum.
+            
+            Morbi ullamcorper nulla et mi accumsan ultricies. Donec pellentesque ultricies elit, in blandit odio gravida porttitor. Suspendisse potenti. Phasellus turpis nisi, sollicitudin ut varius a, ultrices sed lacus. Aenean tempor eros ipsum, nec congue nisi luctus pellentesque. Vestibulum vel bibendum massa. Nulla eget malesuada mi. Vestibulum condimentum vulputate arcu, quis posuere metus finibus sit amet. Etiam elit mauris, consequat eget mauris eu, gravida ullamcorper ex. Morbi iaculis nunc a sagittis molestie. Morbi imperdiet, ex quis scelerisque dignissim, nibh nisi tincidunt felis, ut dictum sem diam fringilla erat. Sed id felis mollis, accumsan ex eget, tincidunt ipsum. Vestibulum a cursus justo. Vivamus et lacus sit amet mi varius lacinia. Vivamus rutrum metus tortor, viverra blandit nisi pulvinar quis.
+            
+            Fusce nec maximus sapien. In aliquam eu lorem nec dapibus. Nullam efficitur condimentum purus, quis semper leo eleifend nec. Maecenas scelerisque augue id ante scelerisque, suscipit viverra ex eleifend. Phasellus venenatis ullamcorper ipsum, quis egestas quam dignissim vitae. Pellentesque imperdiet ultrices mauris, dignissim consectetur mauris. Aliquam consectetur gravida elit, elementum auctor elit rhoncus vitae. Nunc sollicitudin eu metus a commodo. Fusce condimentum blandit ligula vitae aliquam. Nulla ac tortor at risus commodo fermentum. Cras vestibulum diam a enim dictum eleifend.
+            
+            Duis ultrices hendrerit libero quis viverra. Vestibulum laoreet neque nec tempus aliquam. Vestibulum interdum sem quis urna elementum congue. Pellentesque elementum volutpat mollis. Nulla facilisi. Proin dapibus lacus nunc, eget pretium nisi facilisis sed. Donec auctor bibendum libero, elementum sodales tellus semper id. Pellentesque dignissim sapien nec purus fringilla mattis. Nunc eros neque, mattis et vehicula eu, vestibulum eget ante. Vivamus mattis libero tincidunt scelerisque congue. Donec eleifend, enim imperdiet euismod sodales, enim risus molestie enim, molestie molestie felis diam sed nibh. Vestibulum ac justo aliquet, ornare velit id, venenatis ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras pellentesque sapien vel odio fringilla placerat sit amet vel leo.`
+        },
+    ],
+    "events" : [
+        {
+            "title": "Adopt a Rodent Day",
+            "date": new Date("Sep 31 2021"),
+            "thumbnail": "../shared/media/guinea-pigs.jpg"
+        },
+        {
+            "title": "Volunteering - Shelter Cleanup",
+            "date": new Date("Oct 12 2021"),
+            "thumbnail": "../shared/media/kittens.jpg"
+        },
+        {
+            "title": "Pet Food Drive",
+            "date": new Date("Oct 25 2021"),
+            "thumbnail": "../shared/media/parrot.jpg"
+        },
+    ]
+}

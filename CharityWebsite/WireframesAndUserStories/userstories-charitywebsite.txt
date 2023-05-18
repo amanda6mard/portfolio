@@ -1,0 +1,7 @@
+1) As a user I want to donate online so that I can easily donate from home
+2) As a user I want to automatically donate monthly so that I can contribute regularly with little effort.
+3) As a charity I want to distribute information about the charity so that people know about our organization.
+4) As a charity I want to distribute information about our cause so that people will want to donate.
+5) As a charity I want to have a blog or news section so that people can get updates about our charity and keep us in mind.
+6) As a user I want to see information about how I can help the cause so that I easily know what actions I can take.
+7) As a user I want to have a charitable donation receipt so that I can claim my donation on my taxes.

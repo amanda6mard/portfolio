@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Rescue | Donate</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../shared/styles/styles.css">
+    <script src="../shared/scripts/header.js"></script>
+    <script src="../shared/scripts/donationForm.js"></script>
+    <script src="../shared/scripts/footer.js"></script>
+</head>
+
+<body>
+    <div class="hero-image">
+        <div class="image-fit-to-container image-centered-in-container"><img src="../shared/media/kittens.jpg"></div>
+        <div class="image-overlay centered-in-container">
+            <div class="donate-form-container">
+                <form name="donationForm">
+                    <div class="hidden">
+                        <input type="radio" value="once" name="donationType" id="type-once">
+                        <input type="radio" value="monthly" name="donationType" id="type-monthly" checked="true">
+                    </div>
+                    <div class="donate-form-tabs">
+                        <div id="onetime-donation">One-time Donation</div>
+                        <div id="monthly-donation" class="active-tab">Monthly Donation</div>
+                    </div>
+                    <div class="donation-form">
+                        <div class="hidden">
+                            <input type="radio" value="10" name="donationAmount" id="10-radio">
+                            <input type="radio" value="15" name="donationAmount" id="15-radio">
+                            <input type="radio" value="25" name="donationAmount" id="25-radio" checked="true">
+                            <input type="radio" value="40" name="donationAmount" id="40-radio">
+                            <input type="radio" value="25  " name="donationAmount" id="custom-amount">
+                        </div>
+                        <div class="custom-radio-buttons">
+                            <div class="custom-radio" name="donation-amount" id="10-button">$10</div>
+                            <div class="custom-radio" name="donation-amount" id="15-button">$15</div>
+                            <div class="custom-radio active-custom-radio" name="donation-amount" id="25-button">$25
+                            </div>
+                            <div class="custom-radio" name="donation-amount" id="40-button">$40</div>
+                            <div class="radio-text-in"><span style="padding: 10px 0">$</span><input class="custom-radio"
+                                    name="donation-amount" id="custom-input" type="number" min="1"
+                                    placeholder="Custom amount"></div>
+                        </div>
+                    </div>
+                    <div id="frequency-form">
+                        <h3>Length of donation</h3>
+                        <div class="hidden">
+                            <input type="radio" value="1" name="duration" id="1-year-radio">
+                            <input type="radio" value="2" name="duration" id="2-year-radio" checked="true">
+                            <input type="radio" value="5" name="duration" id="5-year-radio">
+                        </div>
+                        <div class="custom-radio-buttons">
+                            <div class="custom-radio" name="year-selection" id="1-year-button">1 year</div>
+                            <div class="custom-radio  active-custom-radio" name="year-selection" id="2-year-button">2
+                                years</div>
+                            <div class="custom-radio" name="year-selection" id="5-year-button">5 years</div>
+                        </div>
+                    </div>
+                    <input type="button" value="Donate" class="button button-stretch mt-10" id="submit-button">
+                </form>
+            </div>
+
+        </div>
+        <div id="donation-modal" class="hidden">
+            <div id="close-button">close</div>
+            <div id="donation-modal-contents">close</div>
+        </div>
+    </div>
+    <header></header>
+    <footer class="hero-footer"></footer>
+</body>
+
+</html>
