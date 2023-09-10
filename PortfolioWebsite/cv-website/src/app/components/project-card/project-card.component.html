@@ -1,0 +1,17 @@
+<div *ngIf="project" class="project-card">
+  <h2 class="mono-txt">{{project.title}}</h2>
+  <div class="project-content">
+    <p class="project-description">{{project.description}}</p>
+    <div *ngIf="project.thumbnails.length > 0" class="project-thumbnails">
+      <h3>Screenshots: </h3><br>
+      <img *ngFor="let thumbnail of project.thumbnails" [src]="'assets/images/' + thumbnail" (click)="imageClicked(thumbnail)">
+    </div>
+    <div class="project-links">
+      <a *ngIf="project.linkToProject" [href]="project.linkToProject" target="_blank">view application</a>
+      <a *ngIf="project.linkToCode" [href]="project.linkToCode" target="_blank">view code</a></div>
+    <p><strong>Programming Languages and Frameworks: </strong></p>
+    <pill-box [pills]="project.programmingLanguages.sort()"></pill-box>
+    <p *ngIf="project.otherSoftware"><strong>Other Notable Software and Technologies: </strong></p>
+    <pill-box [pills]="project.otherSoftware"></pill-box>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+@import "../../../variables";
+
+.full-page {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 90%;
+  transform: translate(-50%, -50%);
+  background-color: #111;
+  img {
+    position: absolute;
+    max-width: 90%;
+    max-height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.close-button {
+  color: white;
+  float: right;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-family: $monospace-basic;
+}
+
+

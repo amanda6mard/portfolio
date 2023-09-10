@@ -1,0 +1,3 @@
+<div  *ngIf="pills">
+  <pill *ngFor="let text of pills; let last = last" [text]="text" [class]="class" [isLast]="last"></pill>
+</div>

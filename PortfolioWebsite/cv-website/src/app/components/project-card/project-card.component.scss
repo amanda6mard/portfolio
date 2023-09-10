@@ -1,0 +1,62 @@
+@import "../../../variables";
+
+.project-card {
+  margin: 10px 0px;
+  white-space: pre-wrap;
+}
+
+h2{
+  color: white;
+  background-color: black;
+  padding: 10px;
+  margin: 0px;
+}
+
+h3{
+  display: inline-block;
+  font-family: $monospace-basic;
+  margin: 0 0 5px 5px;
+  border-bottom: solid 2px $projects-color;
+}
+
+.project-content{
+  border: solid 5px $projects-color;
+  padding: 20px;
+}
+
+.project-description{
+  margin: 0px 0px 5px 0px;
+}
+
+.project-thumbnails {
+  white-space: nowrap;
+  overflow: auto;
+  margin: 20px 0px;
+  padding: 10px;
+  max-width: 100%;
+  background-color: #ddd;
+  img{
+    height: 150px;
+    margin:5px;
+  }
+}
+
+.project-links {
+  display: block;
+  margin: 10px 0px;
+}
+
+.project-links a{
+  display: inline-block;
+  padding: 10px;
+  margin-right:10px;
+  background-color: $projects-color;
+  text-decoration: none;
+  color: $black;
+  font-weight: bold;
+  border-radius: 5px;
+  &:hover{
+    background-color: rgba($projects-color, .7);
+  }
+}
+

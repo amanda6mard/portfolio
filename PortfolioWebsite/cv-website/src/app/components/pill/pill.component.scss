@@ -1,0 +1,36 @@
+@import "../../../variables";
+
+.pill{
+  background-color: gray;
+  color: white;
+  display: inline-block;
+  padding: 4px 15px;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  border-radius: 15px;
+  user-select: none;
+}
+
+.hoverable{
+  &:hover{
+    background-color: #3d3d3d;
+    cursor: pointer;
+  }
+}
+
+@media print {
+  .pill {
+    color: $black;
+    background-color: transparent;
+    padding: 0px;
+    &::after {
+      content: ", ";
+    }
+  }
+
+  .last-pill {
+    &::after {
+      content: "";
+    }
+  }
+}

@@ -1,0 +1,45 @@
+<div class="print-button" (click)="print()"><svg-icon [icon]="'print'" [height]="'25px'"></svg-icon>print</div>
+<div class="contact-info">
+  <p>Phone | 514.573.3916</p>
+  <p>Email | amanda6mard@gmail.com</p>
+</div>
+<h1 class="no-bottom-margin">{{cv.name}}</h1>
+<h2 class="subtitle">{{cv.jobTitle}}</h2>
+<p><strong>Languages: </strong>{{cv.languages}}</p>
+<h2>Experience</h2>
+<div *ngFor="let exp of cv.experience">
+  <div class="grid">
+    <div><strong>{{exp.title}}</strong></div>
+    <div> <em>{{exp.company}}</em> </div>
+    <div> {{exp.startDate | date: "MM/yyyy"}} - {{exp.endDate | date: "MM/yyyy"}}</div>
+  </div>
+  <p class="pad-sides">{{exp.descriptionIntro}}</p>
+  <ul>
+    <li *ngFor="let point of exp.descriptionPoints">{{point}}</li>
+  </ul>
+</div>
+<h2>Education</h2>
+<div *ngFor="let edu of cv.education">
+  <div class="grid">
+    <div><strong>{{edu.degree}}</strong></div>
+    <div> <em>{{edu.school}}</em> </div>
+    <div *ngIf="edu.endDate">completed {{edu.endDate | date: "MM/yyyy"}}</div>
+    <div *ngIf="edu.startDate && !edu.endDate">since {{edu.startDate | date: "yyyy"}}</div>
+  </div>
+  <div class="pad">
+    <strong>Notable courses: </strong> <pill-box [pills]="edu.descriptionPoints" [class]="'cv-bck'"></pill-box>
+  </div>
+</div>
+<h2 class="pad-sides">Skills Summary</h2>
+<h3 class="pad-sides">Programming Languages and Technologies:</h3>
+<div class="pad-sides">
+  <pill-box [pills]="cv.skills" [class]="'cv-bck'"></pill-box>
+</div>
+<h3 class="pad-sides">Other skills:</h3>
+<div class="pad-sides">
+  <pill-box [pills]="cv.otherSkills" [class]="'cv-bck'"></pill-box>
+</div>
+<h3 class="pad-sides">Software:</h3>
+<div class="pad-sides">
+  <pill-box [pills]="cv.software" [class]="'cv-bck'"></pill-box>
+</div>

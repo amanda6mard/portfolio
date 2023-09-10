@@ -1,0 +1,29 @@
+@import "../../../variables";
+
+.svg-style {
+  fill: $contact-color;
+  margin-right: 15px;
+  top: 14px;
+  position: relative;
+}
+
+div{
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  height: 50px;
+  font-size: 20px;
+  font-family: $display-font;
+  margin-bottom: 10px;
+}
+
+a{
+  text-decoration: none;
+  color: $black;
+}
+
+.bold-on-hover div{
+  &:hover {
+    font-weight: bold;
+  }
+}

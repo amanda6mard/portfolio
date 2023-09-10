@@ -1,0 +1,5 @@
+<div [class.main-content-block]="useContentContainer" [class.full-block]="!useContentContainer">
+  <page-title *ngIf="pageComponent.pageTitle" [title]="pageComponent.pageTitle" [titleClass]="pageComponent.pageTitleClass"></page-title>
+  <router-outlet></router-outlet>
+</div>
+

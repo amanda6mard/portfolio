@@ -1,0 +1,73 @@
+<div class="colored-content-block mono-txt white-txt black-bck smaller-txt">
+
+  <h2>final class Amanda extends Developer <span class="colored-txt">&#123;</span></h2>
+
+  <div class="indent">
+    <p>public static Amanda getInstance() &#123;...}</p>
+    <p>public String getGreeting() &#123;...}</p>
+    <p>public String getSummary() &#123;...}</p>
+  </div>
+
+  <h2 class="colored-txt">}</h2>
+
+  <h2>public class About <span class="colored-txt">&#123;</span></h2>
+
+  <div class="indent">
+    <p>public static void main(String[] args)&#123;</p>
+    <div class="indent">
+      <p>Amanda a = Amanda.getInstance();</p>
+      <p>a.getGreeting();</p>
+      <p>a.getSummary();</p>
+    </div>
+    <p>}</p>
+  </div>
+  <h2 class="colored-txt small-flashing-cursor">}</h2>
+</div>
+<div class="spacer"></div>
+<div class="greeting">
+  <p class="bigger-text">I'm Amanda. Nice to meet you!</p>
+  <p class="big-text">I'm always open to a challenge and I love to learn.</p>
+  <p class="big-text">
+    Over the years, I've worked and studied in a wide-variety of areas, which gives me a unique and diversified skill set.
+    From coding, to writing, and even music and sound recording, I've found the skills I've gained in various domains
+    have a lot of cross-over and have all contributed to making me a better developer.
+  </p>
+</div>
+<h1 class="mono-txt">Summary</h1>
+
+<div class="list">
+  <div class="grid">
+      <div><div class="section-title pad">Name: </div></div>
+      <div class="pad">Amanda Simard</div>
+  </div>
+
+  <div class="grid">
+      <div><div class="section-title pad">Spoken & Written languages: </div></div>
+      <div class="pad">English & French</div>
+  </div>
+
+  <div class="grid">
+    <div><div class="section-title pad">Years of experience - Software Development: </div></div>
+    <div class="pad">2+ years</div>
+  </div>
+
+  <div class="grid">
+    <div><div class="section-title pad">Years of experience - Office/Freelance Work: </div></div>
+    <div class="pad">6+ years</div>
+  </div>
+
+  <div class="list">
+    <div>
+      <div class="section-title pad inline-block">Programming languages and More:</div>
+    </div>
+    <div><pill-box [pills]="programmingLanguages" [class]="'about-bck'"></pill-box></div>
+  </div>
+
+  <div class="list">
+    <div>
+      <div class="section-title pad inline-block">Software:</div>
+    </div>
+    <div><pill-box [pills]="softwares" [class]="'about-bck'"></pill-box></div>
+  </div>
+
+</div>

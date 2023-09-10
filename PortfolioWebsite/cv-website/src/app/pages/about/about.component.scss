@@ -1,0 +1,52 @@
+@import "../../../variables";
+
+h1 {
+  border-bottom: solid 4px $about-color;
+}
+
+.colored-txt{
+  color: $about-color;
+}
+
+.colored-bck{
+  background-color: $about-color;
+}
+
+.bigger-text {
+  font-size: 125%;
+  font-weight: bold;
+}
+
+.big-text {
+  font-size: 105%;
+}
+
+.greeting {
+  padding: 10px 25px;
+  background-color: #ddd;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: max-content auto;
+  grid-gap: 10px;
+  ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+}
+
+.list {
+  display: grid;
+  grid-gap: 10px;
+}
+
+.section-title {
+  background-color: black;
+  color: white;
+  font-family: $monospace-basic;
+}
+
+.pad {
+  padding: 10px 10px 7px 10px;
+}

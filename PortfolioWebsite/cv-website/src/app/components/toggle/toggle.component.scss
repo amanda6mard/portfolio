@@ -1,0 +1,16 @@
+@import "../../../variables";
+
+div {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba($projects-color, .5);
+  margin-left: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.active {
+  background-color: rgba($projects-color, 1);
+}

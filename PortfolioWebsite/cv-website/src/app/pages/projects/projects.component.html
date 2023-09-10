@@ -1,0 +1,6 @@
+<image-modal [open]="modalOpen" [image]="modalImage" (closedClicked)="closeModal()"></image-modal>
+<div>
+  <strong>Filter by programming language: </strong>
+  <toggle *ngFor="let lang of toggles" [toggle]="lang" (toggleEvent)="toggle($event)"></toggle>
+</div>
+<project-card *ngFor="let project of displayProjects" [project]="project" (imageClick)="imageClicked($event)"></project-card>

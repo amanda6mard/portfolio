@@ -1,0 +1,99 @@
+@import "../../../variables";
+.title-color {
+  color: $cv-color;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto 300px max-content;
+  grid-gap: 10px;
+  background-color: #ddd;
+  padding: 10px;
+  -webkit-print-color-adjust: exact !important;
+}
+
+.grid-2 {
+  grid-template-columns: auto max-content;
+}
+
+.subtitle {
+  color: $cv-color;
+  margin: 0;
+}
+
+.pad {
+  padding:10px;
+}
+
+
+.pad-sides {
+  padding: 0 10px;
+}
+
+.print-button {
+  display: inline-block;
+  float: right;
+  cursor: pointer;
+  background-color: $cv-color;
+  color: white;
+  padding: 5px 10px 15px 10px;
+  border-radius: 12px;
+  font-family: $monospace-basic;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.cv-pill {
+  color: pink !important;
+}
+
+.svg-style {
+  fill: white;
+  margin-right: 10px;
+  position: relative;
+  top: 7px
+}
+
+.contact-info{
+  display: none;
+  float: right;
+  p{
+    margin: 0;
+  }
+}
+
+@media print {
+  h1 {
+    font-size: 125%;
+  }
+  h2 {
+    font-size: 110%;
+  }
+
+  h3 {
+    font-size: 100%;
+  }
+  .print-button {
+    display: none;
+  }
+  .contact-info{
+    display: inline-block;
+  }
+  li{
+    margin: 4px;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .grid{
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media screen and (max-width: 685px){
+  .grid{
+    grid-template-columns: auto auto;
+  }
+}
